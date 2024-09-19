@@ -1,0 +1,43 @@
+.card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 15rem;
+    padding: 10px;
+    border: 1.3px solid black;
+    border-radius: 5px;
+}
+.card .title {
+    font-size: 1.5rem;
+}
+.card img {
+    object-fit: contain;
+}
+
+.card .add-details {
+    display: flex;
+    justify-content: space-between;
+
+}
+.card button {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.card button:hover {
+    transform: scale(1.1);
+}
+.card button:active {
+    transform: scale(.97);
+}
+
+@media only screen and (max-width: 376px){
+    .card {
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+    .card img {
+        width: 10rem;
+    }
+}
